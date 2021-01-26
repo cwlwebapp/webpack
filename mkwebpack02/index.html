@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <!-- 见 EMRA.md -->
+    <%= htmlWebpackPlugin.files.js[1] %>
+        <% for(var ke=0; ke<htmlWebpackPlugin.files.js.length; ke++){ %>
+            <% if(ke!=='main' ){ %>
+                <script tyep="text/JavaScript" src="<%= htmlWebpackPlugin.files.js[ke] %>"></script>
+                <% }%>
+                    <% }%>
+
+
+
+
+</head>
+
+<body>
+    <% for(var key in htmlWebpackPlugin['files']){ %>
+        <%= key %> :<%= JSON.stringify(htmlWebpackPlugin['files'][key]) %>
+                <%}%>
+
+                    <script>
+                        class person {
+                            constructor(person,son) {
+                                this.person = person;
+                                this.son = son;
+                            }
+
+                            toString() {
+                                return '(' + this.person + ', ' + this.son + ')';
+                            }
+                        }
+                    </script>
+</body>
+
+</html>

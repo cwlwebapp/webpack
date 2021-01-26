@@ -1,0 +1,15 @@
+@charset "utf-8";
+//rem整数换算
+@function rem ($num) {
+  @return ($num /720) * 100vw;
+}
+
+//rem整数换算
+@function mv ($num) {
+  @return ($num /1080) * 100vw;
+}
+
+//rpx 换算
+@function rpx($num){
+  @return ($num /750) * 100vw;
+}

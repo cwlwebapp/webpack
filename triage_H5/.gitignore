@@ -1,0 +1,15 @@
+.idea
+.idea/
+.DS_Store
+node_modules/
+.project
+dist
+dist/*
+dist-dev
+dist-dev/*
+dist-*
+src/config/*.tmp
+src/config/env.js
+/index.html
+/index_prod.html
+package-lock.json

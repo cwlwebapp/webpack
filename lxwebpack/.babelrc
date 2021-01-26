@@ -1,0 +1,17 @@
+//  按需加载 es5 转es6
+{
+  "presets": [
+    ["es2015", { "modules": false }]
+  ],
+   "plugins": [
+    ["import", {
+      "libraryName": "vant",
+      "libraryDirectory": "es",
+      "style": true
+    }],
+    ["import", {
+      "libraryName": "iview",
+      "libraryDirectory": "src/components"
+    }]
+  ]
+}

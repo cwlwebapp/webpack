@@ -1,0 +1,9 @@
+*.svg
+*.ejs
+.DS_Store
+build
+node_modules
+public
+src/main.js
+src/vendors.js
+src/components/common/*

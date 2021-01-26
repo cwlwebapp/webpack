@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+</head>
+
+<body>
+    <% for(var key in htmlWebpackPlugin['files']){ %>
+        <%= key %> :<%= JSON.stringify(htmlWebpackPlugin['files'][key]) %>
+                <%}%>
+
+                    <% for(var key in htmlWebpackPlugin['options']){ %>
+                        <%= key %> :<%= JSON.stringify(htmlWebpackPlugin['options'][key]) %>
+                                <%}%>
+                                    <script src="./hello.js.js"></script>
+                                    <script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[0] %>"></script>
+                                    <script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[1] %>"></script>
+</body>
+
+</html>
